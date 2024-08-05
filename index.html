@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Курорт</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Вітаємо на нашому курорті!</h1>
+            <nav>
+                <a href="#home">Головна</a>
+                <a href="#about">Про нас</a>
+                <a href="#gallery">Галерея</a>
+                <a href="#contact">Контакти</a>
+            </nav>
+        </header>
+        <main id="home">
+            <section id="about">
+                <h2>Про нас</h2>
+                <p>Наш курорт - це ідеальне місце для відпочинку та релаксації.
+                    Насолоджуйтесь природою, комфортом та бездоганним
+                    сервісом.</p>
+            </section>
+            <section id="gallery" class="gallery">
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide active" data-title="Кафе"
+                            data-description="Затишне кафе з чудовою атмосферою.">
+                            <img src="images/cafe.jpg" alt="Кафе">
+                        </div>
+                        <div class="slide" data-title="Сітчасті шезлонги"
+                            data-description="Комфортні сітчасті шезлонги для відпочинку на пляжі.">
+                            <img src="images/mesh-sunbeds.jpg"
+                                alt="Сітчасті шезлонги">
+                        </div>
+                        <div class="slide" data-title="Обслуговування"
+                            data-description="Високоякісне обслуговування для вашого комфорту.">
+                            <img src="images/servise.jpg" alt="Обслуговування">
+                        </div>
+                        <div class="slide" data-title="Шезлонги"
+                            data-description="Комфортні шезлонги на нашому пляжі.">
+                            <img src="images/sunbeds.jpg" alt="Шезлонги">
+                        </div>
+                        <div class="slide" data-title="Планшет"
+                            data-description="Сучасні технології для вашого комфорту.">
+                            <img src="images/tablet.jpg" alt="Планшет">
+                        </div>
+                    </div>
+                    <button class="prev">❮</button>
+                    <button class="next">❯</button>
+                </div>
+                <div class="video-gallery">
+                    <video controls>
+                        <source src="video/cafe.mp4" type="video/mp4">
+                        Ваш браузер не підтримує відео.
+                    </video>
+                    <video controls>
+                        <source src="video/pool.mp4" type="video/mp4">
+                        Ваш браузер не підтримує відео.
+                    </video>
+                    <video controls>
+                        <source src="video/sunbeds.mp4" type="video/mp4">
+                        Ваш браузер не підтримує відео.
+                    </video>
+                </div>
+            </section>
+        </main>
+        <footer id="contact">
+            <p>&copy; 2024 Курорт</p>
+            <p>Email: contact@resort.com | Телефон: +380 12 345 6789</p>
+        </footer>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2 id="modal-title"></h2>
+                <p id="modal-description"></p>
+            </div>
+        </div>
+        <script src="scripts.js"></script>
+    </body>
+</html>
